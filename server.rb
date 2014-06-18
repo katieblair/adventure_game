@@ -2,9 +2,9 @@ require 'sinatra'
 require 'shotgun'
 
 
-get '/index' do
+get '/' do
 
-
+  redirect :'/intro'
 end
 
 get '/intro' do
@@ -27,9 +27,9 @@ get '/drinkfromlake' do
   erb :'drinkfromlake.html'
 end
 
-get '/strangedreamlake' do
+get '/strangedream' do
 
-  erb :'strangedreamlake.html'
+  erb :'strangedream.html'
 end
 
 get '/drinkthewine' do
@@ -37,24 +37,19 @@ get '/drinkthewine' do
   erb :'drinkthewine.html'
 end
 
-get '/7' do
+get '/gotoinn' do
 
-  erb :'adventure7.html'
+  erb :'gotoinn.html'
 end
 
-get '/8' do
+get '/continueontrail' do
 
-  erb :'adventure8.html'
+  erb :'continueontrail.html'
 end
 
-get '/9' do
+get '/wakefromdream' do
 
-  erb :'adventure9.html'
-end
-
-get '/10' do
-
-  erb :'adventure10.html'
+  erb :'wakefromdream.html'
 end
 
 
