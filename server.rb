@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'shotgun'
 
+# Is there a way to dry this up, where anytime I get 'x' do I use erb :x?
 
 get '/' do
 
